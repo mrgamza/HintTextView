@@ -10,16 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet private weak var textView: HintTextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        textView.placeHolderText = "텍스트를 입력하여 주세요."
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
