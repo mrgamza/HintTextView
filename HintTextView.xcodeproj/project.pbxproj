@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C46E9C6520E3BEF2003791F0 /* HintTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E9C6420E3BEF2003791F0 /* HintTextView.swift */; };
 		C4B6B6A120E0B86E0030BE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6B6A020E0B86E0030BE08 /* AppDelegate.swift */; };
 		C4B6B6A320E0B86E0030BE08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6B6A220E0B86E0030BE08 /* ViewController.swift */; };
 		C4B6B6A620E0B86E0030BE08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B6B6A420E0B86E0030BE08 /* Main.storyboard */; };
 		C4B6B6A820E0B86F0030BE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B6B6A720E0B86F0030BE08 /* Assets.xcassets */; };
 		C4B6B6AB20E0B86F0030BE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B6B6A920E0B86F0030BE08 /* LaunchScreen.storyboard */; };
-		C4B6B6D020E0C07A0030BE08 /* HintTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6B6CF20E0C07A0030BE08 /* HintTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C46E9C6420E3BEF2003791F0 /* HintTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HintTextView.swift; sourceTree = "<group>"; };
 		C4B6B69D20E0B86E0030BE08 /* HintTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HintTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B6B6A020E0B86E0030BE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B6B6A220E0B86E0030BE08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		C4B6B6AC20E0B86F0030BE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4B6B6B120E0B86F0030BE08 /* HintTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HintTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B6B6BC20E0B86F0030BE08 /* HintTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HintTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4B6B6CF20E0C07A0030BE08 /* HintTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HintTextView.swift; path = ../../../HintTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 		C4B6B6CE20E0BEE10030BE08 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C4B6B6CF20E0C07A0030BE08 /* HintTextView.swift */,
+				C46E9C6420E3BEF2003791F0 /* HintTextView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -242,7 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B6B6A320E0B86E0030BE08 /* ViewController.swift in Sources */,
-				C4B6B6D020E0C07A0030BE08 /* HintTextView.swift in Sources */,
+				C46E9C6520E3BEF2003791F0 /* HintTextView.swift in Sources */,
 				C4B6B6A120E0B86E0030BE08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
