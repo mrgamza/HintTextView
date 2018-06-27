@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HintTextView: UITextView {
+open class HintTextView: UITextView {
     
     private let placeHolderTop: CGFloat = 8.0
     private let placeHolderLeft: CGFloat = 4.0
@@ -47,7 +47,7 @@ class HintTextView: UITextView {
     
     // MARK: - init
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -74,13 +74,13 @@ class HintTextView: UITextView {
 
 extension HintTextView {
     
-    override var text: String! {
+    override open var text: String! {
         didSet {
             performTextChange()
         }
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         setup()
     }
