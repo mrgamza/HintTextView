@@ -23,7 +23,7 @@ open class HintTextView: UITextView {
     }()
     
     @IBInspectable
-    var hint: String = "" {
+    public var hint: String = "" {
         didSet {
             hintLabel.text = hint
             placeHolderSizeToFit()
@@ -31,14 +31,14 @@ open class HintTextView: UITextView {
     }
     
     @IBInspectable
-    var hintColor: UIColor = .lightGray {
+    public var hintColor: UIColor = .lightGray {
         didSet {
             hintLabel.textColor = hintColor
         }
     }
     
     @IBInspectable
-    var hintFont: UIFont? {
+    public var hintFont: UIFont? {
         didSet {
             hintLabel.font = hintFont
             placeHolderSizeToFit()
@@ -52,16 +52,16 @@ open class HintTextView: UITextView {
         setup()
     }
     
-    override init(frame: CGRect, textContainer: NSTextContainer?) {
+    override public init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         setup()
     }
     
-    convenience init() {
+    convenience public init() {
         self.init(frame: CGRect.zero, textContainer: nil)
     }
     
-    convenience init(frame: CGRect) {
+    convenience public init(frame: CGRect) {
         self.init(frame: frame, textContainer: nil)
     }
     
