@@ -4,7 +4,7 @@ iOS. UITextView support PlaceHolder
 # cocoapods
 pod 'HintTextView'
 
-# Use Code
+# Use Example
 ```
 class ViewController: UIViewController {
 
