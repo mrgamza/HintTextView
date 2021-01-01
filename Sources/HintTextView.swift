@@ -10,10 +10,7 @@ import UIKit
 
 open class HintTextView: UITextView {
     
-    private let placeHolderTop: CGFloat = 8.0
-    private let placeHolderLeft: CGFloat = 4.0
-    
-    private let defaultColor = UIColor(red: 128 / 255, green: 128 / 255, blue: 128 / 255, alpha: 1.0)
+    private let defaultColor = UIColor(red: 0.78, green: 0.78, blue: 0.80, alpha: 1.0)
     
     private lazy var hintLabel: UILabel = {
         let label = UILabel()
@@ -34,14 +31,6 @@ open class HintTextView: UITextView {
     public var hintColor: UIColor = .lightGray {
         didSet {
             hintLabel.textColor = hintColor
-        }
-    }
-    
-    @IBInspectable
-    public var hintFont: UIFont? {
-        didSet {
-            hintLabel.font = hintFont
-            placeHolderSizeToFit()
         }
     }
     
@@ -92,8 +81,10 @@ extension HintTextView {
     
     private func setup() {
         contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
-        let size = font?.pointSize ?? 12.0
-        hintLabel.font = UIFont.systemFont(ofSize: size)
+        textContainerInset = .zero
+        textContainer.lineFragmentPadding = 0
+        
+        hintLabel.font = font
         hintLabel.textColor = hintColor
         hintLabel.text = hint
         
@@ -101,15 +92,15 @@ extension HintTextView {
         
         addSubview(hintLabel)
         
-        self.sendSubview(toBack: hintLabel)
+        sendSubview(toBack: hintLabel)
         
         NotificationCenter.default.addObserver(self, selector: #selector(textChanged(_:)), name: .UITextViewTextDidChange, object: nil)
         performTextChange()
     }
     
     private func placeHolderSizeToFit() {
-        let width = bounds.width - (placeHolderLeft * 2)
-        hintLabel.frame = CGRect(x: placeHolderLeft, y: placeHolderTop, width: width, height: 0.0)
+        let width = bounds.width
+        hintLabel.frame = CGRect(x: 0, y: 0, width: width, height: 0.0)
         hintLabel.sizeToFit()
     }
     
